@@ -1,124 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joban Singh | Full-Stack Developer</title>
-  <meta name="description" content="Senior Full-Stack Software Engineer specializing in React, Angular, Node.js, and scalable web applications.">
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<header class="navbar">
-  <div class="nav-container">
-    <div class="logo">JS</div>
-    <nav>
+<div class="container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h2>Joban Singh</h2>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#education">Education</a>
-      <a href="#contact" class="cta">Contact</a>
+      <a href="#skills">Skills</a>
     </nav>
-  </div>
-</header>
+  </aside>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Joban Singh</h1>
-    <h2>Senior Full-Stack Software Engineer</h2>
-    <p>
-      Building scalable, high-performance web applications using 
-      <strong>React</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, and <strong>Java</strong>.
-    </p>
-    <div class="hero-links">
-      <a href="https://www.linkedin.com/in/joban-singh-b427a014a/" target="_blank">LinkedIn</a>
-      <a href="mailto:joban.singh10777@gmail.com">Email</a>
-      <a href="assets/Joban_Singh_Resume.pdf" download class="cta">Download Resume</a>
-    </div>
-  </div>
-</section>
+  <!-- Main Content -->
+  <main class="main-content">
+    <section id="home" class="section hero">
+      <div class="hero-content">
+        <h1>Joban Singh</h1>
+        <h2>Senior Full-Stack Software Engineer</h2>
+        <p>Building scalable web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, and <strong>Java</strong>.</p>
+      </div>
+    </section>
 
-<section id="experience" class="section">
-  <h3>Experience</h3>
+    <section id="about" class="section">
+      <h3>About Me</h3>
+      <div class="card light-card">
+        <p>Highly skilled Full-Stack Developer with 7+ years of experience building high-performance web applications. Expertise in modern front-end and back-end technologies, cloud services, and delivering user-centric solutions.</p>
+      </div>
+    </section>
 
-  <div class="card">
-    <h4>IBM — Software Developer</h4>
-    <span>Nov 2019 – Present · Canada</span>
-    <ul>
-      <li>Led architectural decisions improving application performance by <strong>30%</strong>.</li>
-      <li>Built scalable full-stack platforms using <strong>React</strong>, <strong>Node.js</strong>, and <strong>OpenSearch</strong> handling <strong>4M+ documents/day</strong>.</li>
-      <li>Optimized authentication and <strong>JWT</strong> module, reducing login errors by <strong>20%</strong>.</li>
-      <li>Wrote unit and integration tests with <strong>Jest</strong> and <strong>React Testing Library</strong>.</li>
-    </ul>
-  </div>
+    <section id="experience" class="section">
+      <h3>Experience</h3>
 
-  <div class="card">
-    <h4>Jobsmont — Software Developer</h4>
-    <span>Oct 2018 – Oct 2019 · Canada</span>
-    <ul>
-      <li>Built Angular-based customer platforms increasing business growth by <strong>20%</strong>.</li>
-      <li>Migrated legacy <strong>AngularJS</strong> apps to modern <strong>Angular</strong>.</li>
-      <li>Designed REST APIs using <strong>Java</strong> and <strong>Spring Boot</strong>.</li>
-    </ul>
-  </div>
+      <div class="card">
+        <h4>IBM — Software Developer</h4>
+        <span>Nov 2019 – Present · Canada</span>
+        <ul>
+          <li>Led architectural decisions improving performance by <strong>30%</strong>.</li>
+          <li>Built scalable full-stack platforms using <strong>React</strong>, <strong>Node.js</strong>, <strong>OpenSearch</strong> handling 4M+ documents/day.</li>
+          <li>Optimized JWT authentication reducing login errors by <strong>20%</strong>.</li>
+        </ul>
+      </div>
 
-  <div class="card">
-    <h4>ITStars — Software Developer</h4>
-    <span>Jan 2016 – Jan 2017 · India</span>
-    <ul>
-      <li>Developed responsive mentoring platform using <strong>HTML, CSS, JavaScript</strong> and <strong>Node.js</strong>.</li>
-      <li>Implemented WebSocket chat reducing query resolution time by <strong>35%</strong>.</li>
-      <li>Secured backend with email verification reducing spam accounts by <strong>97%</strong>.</li>
-    </ul>
-  </div>
-</section>
+      <div class="card">
+        <h4>Jobsmont — Software Developer</h4>
+        <span>Oct 2018 – Oct 2019 · Canada</span>
+        <ul>
+          <li>Developed Angular-based apps increasing business growth by <strong>20%</strong>.</li>
+          <li>Migrated legacy <strong>AngularJS</strong> apps to modern <strong>Angular</strong>.</li>
+          <li>Designed REST APIs with <strong>Java</strong> and <strong>Spring Boot</strong>.</li>
+        </ul>
+      </div>
 
-<section id="skills" class="section alt">
-  <h3>Technical Skills</h3>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h5>Languages</h5>
-      <p>JavaScript, TypeScript, Java, Python, SQL, HTML, CSS, C/C++</p>
-    </div>
-    <div class="skill-card">
-      <h5>Frameworks</h5>
-      <p>React, Angular, Node.js, Spring Boot, Next.js</p>
-    </div>
-    <div class="skill-card">
-      <h5>Libraries & Tools</h5>
-      <p>Redux, NgRx, RxJS, Material UI, OpenSearch, GraphQL, Docker, Kubernetes, AWS, CI/CD, Jest</p>
-    </div>
-    <div class="skill-card">
-      <h5>Methodologies</h5>
-      <p>Agile, TDD, BDD, System Design, Performance Optimization</p>
-    </div>
-  </div>
-</section>
+      <div class="card">
+        <h4>ITStars — Software Developer</h4>
+        <span>Jan 2016 – Jan 2017 · India</span>
+        <ul>
+          <li>Developed responsive mentoring platform using <strong>HTML, CSS, JavaScript</strong>, and <strong>Node.js</strong>.</li>
+          <li>Implemented WebSocket chat reducing query resolution time by <strong>35%</strong>.</li>
+        </ul>
+      </div>
+    </section>
 
-<section id="education" class="section">
-  <h3>Education</h3>
-  <div class="card">
-    <h4>St. Lawrence College</h4>
-    <p>Computer Programming (Distinction)</p>
-  </div>
-  <div class="card">
-    <h4>Guru Nanak Dev University</h4>
-    <p>Bachelor’s in Computer Science</p>
-  </div>
-  <div class="card">
-    <h4>Certifications</h4>
-    <p>AWS Developer Associate, MuleSoft Certified</p>
-  </div>
-</section>
+    <section id="projects" class="section">
+      <h3>Projects</h3>
+      <div class="card light-card">
+        <p>Full-stack web applications using React, Node.js, and REST APIs. Built internal tools for automation and data retrieval improving efficiency by 50%.</p>
+      </div>
+    </section>
 
-<section id="contact" class="section alt">
-  <h3>Contact</h3>
-  <p>Feel free to reach out via <a href="mailto:joban.singh10777@gmail.com">email</a> or connect on <a href="https://www.linkedin.com/in/joban-singh-b427a014a/" target="_blank">LinkedIn</a>.</p>
-</section>
+    <section id="education" class="section">
+      <h3>Education & Certifications</h3>
+      <div class="card light-card">
+        <p><strong>St. Lawrence College</strong> — Computer Programming (Distinction)</p>
+        <p><strong>Guru Nanak Dev University</strong> — B.Sc. Computer Science</p>
+        <p>Certifications: AWS Developer Associate, MuleSoft Certified</p>
+      </div>
+    </section>
 
-<footer class="footer">
-  <p>© 2026 Joban Singh · Built with HTML & CSS</p>
-</footer>
+    <section id="skills" class="section">
+      <h3>Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card">JavaScript, TypeScript, Java, Python, SQL, HTML, CSS, C/C++</div>
+        <div class="skill-card">React, Angular, Node.js, Spring Boot, Next.js</div>
+        <div class="skill-card">Redux, NgRx, RxJS, Material UI, OpenSearch, GraphQL, Docker, Kubernetes, AWS, CI/CD, Jest</div>
+        <div class="skill-card">Agile, TDD, BDD, System Design, Performance Optimization</div>
+      </div>
+    </section>
+  </main>
+</div>
 
 <script src="script.js"></script>
 </body>
