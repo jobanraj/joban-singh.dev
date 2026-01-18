@@ -109,3 +109,40 @@ body {
 }
 
 a { text-decoration:none; }
+
+.skill-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  margin: 16px 0 32px;
+}
+
+.skill-icons div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fde7db; /* light peach */
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-icons div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.skill-icons img {
+  width: 28px;      /* 👈 ICON SIZE FIX */
+  height: 28px;
+  object-fit: contain;
+}
+
+.skill-icons span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2d2d2d;
+}
+
+
+
