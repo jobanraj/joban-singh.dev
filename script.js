@@ -1,27 +1,17 @@
-// Smooth scroll
-document.querySelectorAll('.sidebar-nav a').forEach(anchor=>{
-  anchor.addEventListener('click', function(e){
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-  });
-});
+const sections = document.querySelectorAll('.section');
+const navLinks = document.querySelectorAll('.sidebar nav a');
 
-// Scrollspy
-const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-window.addEventListener('scroll', ()=>{
+window.addEventListener('scroll', () => {
   let current = '';
-  sections.forEach(section=>{
-    const sectionTop = section.offsetTop - 60;
-    const sectionHeight = section.clientHeight;
-    if(scrollY >= sectionTop && scrollY < sectionTop + sectionHeight){
-      current = section.getAttribute('id');
-    }
+  sections.forEach(section => {
+    const top = window.scrollY;
+    const offset = section.offsetTop - 120;
+    if (top >= offset) current = section.id;
   });
-  navLinks.forEach(link=>{
+
+  navLinks.forEach(link => {
     link.classList.remove('active');
-    if(link.getAttribute('href') === '#'+current){
+    if (link.getAttribute('href') === `#${current}`) {
       link.classList.add('active');
     }
   });
