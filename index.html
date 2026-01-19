@@ -1,144 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joban Singh | Full-Stack Developer</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Joban Singh | Senior Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Senior Software Engineer specializing in scalable full-stack systems, cloud platforms, and modern web technologies." />
+
+  <!-- Fonts (matches reference closely) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <div class="container">
-  <!-- Sidebar Navigation -->
+
+  <!-- Sidebar -->
   <aside class="sidebar">
-    <h2 class="sidebar-title">Joban Singh</h2>
-    <nav class="sidebar-nav">
+    <h1>JS</h1>
+    <nav>
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
   </aside>
 
   <!-- Main Content -->
-  <main class="main-content">
+  <main>
+
+    <!-- HERO -->
     <section id="home" class="section hero">
-      <h1>Joban Singh</h1>
-      <h2>Senior Full-Stack Software Engineer</h2>
-      <p>Building scalable web applications with <strong>React</strong>, <strong>Angular</strong>, <strong>Node.js</strong>, and <strong>Java</strong>.</p>
-    </section>
-
-    <section id="about" class="section">
-      <h3>About Me</h3>
-      <div class="card light-card">
-        <p>Highly skilled Full-Stack Developer with 7+ years of experience building high-performance web applications. Expertise in modern front-end and back-end technologies, cloud services, and delivering user-centric solutions.</p>
+      <h2>Joban Singh</h2>
+      <h3>Senior Full-Stack Software Engineer</h3>
+      <p>
+        Experienced software engineer with 7+ years building scalable,
+        secure, and high-performance web applications across cloud-native,
+        enterprise, and product-driven environments.
+      </p>
+      <div class="cta">
+        <a href="#" class="btn">Resume</a>
+        <a href="https://github.com/" class="btn outline">GitHub</a>
+        <a href="https://linkedin.com/in/joban-singh-b427a014a/" class="btn outline">LinkedIn</a>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h3>Experience</h3>
+    <!-- ABOUT -->
+    <section id="about" class="section fade">
+      <h2>About</h2>
+      <p>
+        I specialize in designing and delivering scalable full-stack systems
+        using modern JavaScript frameworks, cloud infrastructure, and
+        enterprise-grade backend technologies. I enjoy solving complex problems,
+        mentoring engineers, and building products that create measurable impact.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section fade">
+      <h2>Experience</h2>
+
       <div class="card">
-        <h4>IBM — Software Developer</h4>
-        <span>Nov 2019 – Present · Canada</span>
+        <h3>IBM</h3>
+        <span>Software Developer · 2019 – Present</span>
         <ul>
-          <li>Led architectural decisions improving performance by <strong>30%</strong>.</li>
-          <li>Built scalable full-stack platforms using <strong>React</strong>, <strong>Node.js</strong>, <strong>OpenSearch</strong> handling 4M+ documents/day.</li>
-          <li>Optimized JWT authentication reducing login errors by <strong>20%</strong>.</li>
+          <li>Led architectural decisions improving application performance by 30%.</li>
+          <li>Built scalable full-stack systems supporting 4M+ daily documents.</li>
+          <li>Implemented secure authentication workflows using JWT.</li>
+          <li>Automated search infrastructure with Python, improving efficiency by 50%.</li>
+          <li>Maintained high code quality via TDD and automated testing.</li>
         </ul>
       </div>
+
       <div class="card">
-        <h4>Jobsmont — Software Developer</h4>
-        <span>Oct 2018 – Oct 2019 · Canada</span>
+        <h3>Jobsmont</h3>
+        <span>Software Developer · 2018 – 2019</span>
         <ul>
-          <li>Developed Angular-based apps increasing business growth by <strong>20%</strong>.</li>
-          <li>Migrated legacy <strong>AngularJS</strong> apps to modern <strong>Angular</strong>.</li>
-          <li>Designed REST APIs with <strong>Java</strong> and <strong>Spring Boot</strong>.</li>
+          <li>Delivered customer-facing applications driving 20% business growth.</li>
+          <li>Migrated legacy AngularJS systems to modern Angular.</li>
+          <li>Designed RESTful microservices using Spring Boot.</li>
         </ul>
       </div>
+
       <div class="card">
-        <h4>ITStars — Software Developer</h4>
-        <span>Jan 2016 – Jan 2017 · India</span>
+        <h3>ITStars</h3>
+        <span>Software Developer · 2016 – 2017</span>
         <ul>
-          <li>Developed responsive mentoring platform using <strong>HTML, CSS, JavaScript</strong>, and <strong>Node.js</strong>.</li>
-          <li>Implemented WebSocket chat reducing query resolution time by <strong>35%</strong>.</li>
+          <li>Built real-time communication features using WebSockets.</li>
+          <li>Reduced spam accounts by 97% through secure verification flows.</li>
         </ul>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <h3>Projects</h3>
-      <div class="card light-card">
-        <p>Full-stack web applications using React, Node.js, and REST APIs. Built internal tools for automation and data retrieval improving efficiency by 50%.</p>
+    <!-- SKILLS -->
+    <section id="skills" class="section fade">
+      <h2>Skills</h2>
+
+      <h4>Programming Languages</h4>
+      <div class="skills-grid">
+        <div><i class="devicon-java-plain"></i>Java</div>
+        <div><i class="devicon-python-plain"></i>Python</div>
+        <div><i class="devicon-javascript-plain"></i>JavaScript</div>
+        <div><i class="devicon-typescript-plain"></i>TypeScript</div>
+        <div><i class="devicon-html5-plain"></i>HTML5</div>
+        <div><i class="devicon-css3-plain"></i>CSS3</div>
+      </div>
+
+      <h4>Frameworks & Platforms</h4>
+      <div class="skills-grid">
+        <div><i class="devicon-react-original"></i>React</div>
+        <div><i class="devicon-nodejs-plain"></i>Node.js</div>
+        <div><i class="devicon-angularjs-plain"></i>Angular</div>
+        <div><i class="devicon-spring-plain"></i>Spring Boot</div>
+        <div><i class="devicon-docker-plain"></i>Docker</div>
+        <div><i class="devicon-kubernetes-plain"></i>Kubernetes</div>
       </div>
     </section>
 
-    <section id="education" class="section">
-      <h3>Education & Certifications</h3>
-      <div class="card light-card">
-        <p><strong>St. Lawrence College</strong> — Computer Programming (Distinction)</p>
-        <p><strong>Guru Nanak Dev University</strong> — B.Sc. Computer Science</p>
-        <p>Certifications: AWS Developer Associate, MuleSoft Certified</p>
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Enterprise Search Platform</h3>
+        <p>
+          Designed and implemented a distributed search system supporting millions
+          of documents with optimized indexing and querying.
+        </p>
+        <span>React · Node.js · OpenSearch · AWS</span>
       </div>
     </section>
 
-  <!-- Skills Section with Online Icons -->
-<section id="skills">
-  <h2>Skills</h2>
+    <!-- EDUCATION -->
+    <section id="education" class="section fade">
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Computer Programming (Distinction)</h3>
+        <span>St. Lawrence College · 2018</span>
+      </div>
+      <div class="card">
+        <h3>Bachelor of Computer Science</h3>
+        <span>Guru Nanak Dev University · 2017</span>
+      </div>
+    </section>
 
-  <h3>Programming Languages & Tools</h3>
-  <ul class="skills-list">
-    <li>Java, Kotlin, JavaScript / TypeScript, Python</li>
-    <li>HTML5 / CSS3</li>
-    <li>SQL / NoSQL</li>
-    <li>AWS, Docker, Kubernetes</li>
-    <li>Git, CI/CD, Jenkins, Argo CD</li>
-  </ul>
+    <!-- CONTACT -->
+    <section id="contact" class="section fade">
+      <h2>Contact</h2>
+      <p>Email: joban.singh10777@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/joban-singh-b427a014a</p>
+    </section>
 
-  <h3>Workflow</h3>
-  <ul class="skills-list">
-    <li>Test-Driven Development (TDD)</li>
-    <li>SOLID Principles & Design Patterns</li>
-    <li>Scalable and Performant Systems</li>
-    <li>Real-Time Analytics & Data Processing</li>
-    <li>Machine Learning & Deep Learning</li>
-    <li>Recommendation Engines & Graph-Based Algorithms</li>
-    <li>Continuous Learning & Skill Acquisition</li>
-  </ul>
-
-  <h3>Programming / Markup Languages</h3>
-  <div class="skill-icons">
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"><span>Python</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"><span>HTML5</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"><span>CSS3</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"><span>TypeScript</span></div>
-  </div>
-
-  <h3>Frameworks / Libraries</h3>
-  <div class="skill-icons">
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot"><span>Spring Boot</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"><span>Angular</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" alt="Django"><span>Django</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask"><span>Flask</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS"><span>NodeJS</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="ExpressJS"><span>ExpressJS</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg" alt="scikit-learn"><span>scikit-learn</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"><span>Pandas</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib"><span>Matplotlib</span></div>
-  </div>
-
-  <h3>Databases</h3>
-  <div class="skill-icons">
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"><span>SQL</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"><span>PostgreSQL</span></div>
-    <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sap/sap-original.svg" alt="SAP HANA"><span>SAP HANA</span></div>
-  </div>
-</section>
-
-<!-- Add CSS to style .skill-icons for grid layout, spacing, and icon sizes -->
   </main>
 </div>
 
