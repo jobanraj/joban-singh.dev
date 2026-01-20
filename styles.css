@@ -4,6 +4,8 @@
   --text: white;
   --muted: #555;
   --accent: #ff7849;
+  --github: #333333;
+  --linkedin: #0A66C2;
 }
 
 * {
@@ -141,6 +143,24 @@ main {
   background: transparent;
   border-color: #5a642f;
   color: #5a642f;
+}
+
+.btn-github {
+  background: var(--github);
+}
+
+.btn-github:hover,
+.btn-github:active {
+  background: #1a1a1a;
+}
+
+.btn-linkedin {
+  background: var(--linkedin);
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:active {
+  background: #084d94;
 }
 
 .card {
