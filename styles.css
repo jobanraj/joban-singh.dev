@@ -27,12 +27,17 @@ body {
   height: 100vh;
   background: #6b7348;
   padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sidebar h1 {
-  font-weight: 800;
-  margin-bottom: 40px;
-  color: white;
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .sidebar nav a {
@@ -41,12 +46,15 @@ body {
   text-decoration: none;
   color: #e8e8e8;
   font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 .sidebar nav a.active {
   color: #ffffff;
   font-weight: 700;
+  font-size: 1.15em;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
 }
 
 main {
