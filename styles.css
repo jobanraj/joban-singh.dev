@@ -1,7 +1,7 @@
 :root {
-  --bg: #fff5ef;
-  --card: #fde7db;
-  --text: #1f1f1f;
+  --bg: #f6fff8;
+  --card: #f6fff8;
+  --text: white;
   --muted: #555;
   --accent: #ff7849;
 }
@@ -25,31 +25,33 @@ body {
   position: fixed;
   width: 220px;
   height: 100vh;
-  background: #fff;
+  background: #6b7348;
   padding: 40px 20px;
 }
 
 .sidebar h1 {
   font-weight: 800;
   margin-bottom: 40px;
+  color: white;
 }
 
 .sidebar nav a {
   display: block;
   margin-bottom: 16px;
   text-decoration: none;
-  color: var(--muted);
+  color: #e8e8e8;
   font-weight: 500;
 }
 
 .sidebar nav a.active {
-  color: var(--accent);
+  color: white;
 }
 
 main {
   margin-left: 240px;
   padding: 60px;
   max-width: 900px;
+  color: black !important;
 }
 
 .section {
@@ -72,18 +74,43 @@ main {
 }
 
 .btn {
-  background: var(--accent);
+  background: #7a844e;
   color: white;
   padding: 10px 18px;
   border-radius: 6px;
   text-decoration: none;
   margin-right: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  min-height: 45px;
+}
+
+.btn:hover,
+.btn:active {
+  background: #5a642f;
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
 .btn.outline {
   background: transparent;
-  border: 1px solid var(--accent);
-  color: var(--accent);
+  border: 1px solid #7a844e;
+  color: #7a844e;
+}
+
+.btn.outline:hover,
+.btn.outline:active {
+  background: transparent;
+  border-color: #5a642f;
+  color: #5a642f;
 }
 
 .card {
@@ -94,8 +121,8 @@ main {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
 }
 
@@ -103,7 +130,16 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: #fff;
+  background: #ccd5ae;
   padding: 10px;
   border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skills-grid div:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
