@@ -44,7 +44,9 @@ body {
 }
 
 .sidebar nav a.active {
-  color: white;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 
 main {
@@ -58,6 +60,17 @@ main {
   margin-bottom: 100px;
 }
 
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.section > :not(h2):not(h3):not(h4) {
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 .hero h2 {
   font-size: 48px;
   margin: 0;
@@ -66,11 +79,19 @@ main {
 .hero h3 {
   font-weight: 500;
   margin-top: 8px;
+  margin-bottom: 20px;
 }
 
-.hero p {
+.hero-content {
+  padding: 20px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content p {
   max-width: 600px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -118,6 +139,15 @@ main {
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
+  border: 1px solid #d0d0d0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card .company {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 15px;
 }
 
 .skills-grid {
