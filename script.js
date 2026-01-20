@@ -44,7 +44,7 @@ if (emailBtn) {
   });
 }
 document.getElementById("email-copy").addEventListener("click", () => {
-  const email = "your@email.com"; // replace with your email
+  const email = "joban.singh10777@gmail.com"; // replace with your email
 
   navigator.clipboard.writeText(email).then(() => {
     alert("Email copied to clipboard");
