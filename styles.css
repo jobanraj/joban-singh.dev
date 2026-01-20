@@ -1,7 +1,7 @@
 :root {
   --bg: #f6fff8;
-  --card: #f6fff8;
-  --text: white;
+  --card: #ffffff;
+  --text: #222222;
   --muted: #555;
   --accent: #ff7849;
   --github: #333333;
@@ -61,10 +61,10 @@ body {
 
 main {
   margin-left: 240px;
-  padding: 60px;
-  max-width: 900px;
-  color: black !important;
-  padding-bottom: 200px;
+  padding: 48px 60px;
+  max-width: 1000px;
+  color: var(--text) !important;
+  padding-bottom: 160px;
 }
 
 .section {
@@ -77,14 +77,30 @@ main {
 
 .section > :not(h2):not(h3):not(h4) {
   padding: 20px;
-  border: 1px solid #d0d0d0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--card);
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(16, 24, 40, 0.06);
 }
 
 .hero h2 {
   font-size: 48px;
   margin: 0;
+}
+
+/* Hero main name styling (moved outside section) */
+.hero-main h2 {
+  font-size: 64px;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .hero-main h2 {
+    font-size: 40px;
+  }
 }
 
 .hero h3 {
@@ -95,14 +111,16 @@ main {
 
 .hero-content {
   padding: 20px;
-  border: 1px solid #d0d0d0;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.hero-content p {
-  max-width: 600px;
+.section p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 900px;
   margin-bottom: 20px;
+  padding: 12px 6px;
 }
 
 .btn {
@@ -154,6 +172,14 @@ main {
   background: #1a1a1a;
 }
 
+/* Remove border and shadow for social buttons */
+.btn-github,
+.btn-github:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
 .btn-linkedin {
   background: var(--linkedin);
 }
@@ -161,6 +187,47 @@ main {
 .btn-linkedin:hover,
 .btn-linkedin:active {
   background: #084d94;
+}
+
+.btn-linkedin,
+.btn-linkedin:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Ensure social buttons do not show a separate icon border */
+.cta .btn i {
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* Email (Gmail-style) button */
+.btn-email {
+  background: #D93025;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+  padding: 10px 12px;
+}
+
+.btn-email i {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.btn-email:hover,
+.btn-email:active {
+  background: #b02a20;
+  transform: none;
+}
+
+.copy-toast {
+  position: relative;
+  font-size: 14px;
+  color: var(--linkedin);
 }
 
 .card {
@@ -185,6 +252,12 @@ main {
   gap: 12px;
 }
 
+/* Remove outer border added by the generic section rule for skills container */
+.skills-grid {
+  border: none;
+  box-shadow: none;
+}
+
 .skills-grid div {
   display: flex;
   align-items: center;
@@ -196,6 +269,22 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   cursor: pointer;
+}
+
+/* Remove any border on individual skill items, but keep their shadow */
+.skills-grid div {
+  border: none;
+}
+
+/* Add a subtle border around the icon itself */
+.skills-grid div i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  background: transparent;
 }
 
 .skills-grid div:hover {
